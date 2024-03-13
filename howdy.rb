@@ -1,6 +1,6 @@
 require "active_support/all"
-require "awesome_print/all"
-require "pry-byebug/all"
+require "awesome_print"
+require "pry-byebug"
 
 my_string = "Hello, world!"
 pp my_string
@@ -19,5 +19,20 @@ puts "ruby".pluralize      # => "rubies"
 puts "tables".singularize    # => "table"
 "rubies".singularize    # => "ruby"
 "equipment".singularize # => "equipment"
+
+f = "Your lucky number is "
+
+l = rand(100)
+
+byebug
+
+pp f + l
+
+pp "What's your name?"
+
+their_name = gets
+
+pp "Hello, " + their_name + "!"
+
 
 require "./goodbye.rb"
